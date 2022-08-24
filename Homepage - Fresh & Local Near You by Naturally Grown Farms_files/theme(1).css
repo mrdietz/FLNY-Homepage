@@ -1,4 +1,4 @@
-	:root {
+:root {
 	--brand_color: #383535;
 	--brand_color_inverted: #ffffff;
 	--background_color: #FFF;
@@ -72,7 +72,7 @@ a:hover {
 }
 
 .siteHeader {
-	background-color: #d3d3d3;
+	background-color: transparent;
 	color: #383535;
 	border-top-style: solid;
 	border-top-width: 0;
@@ -156,11 +156,11 @@ a:hover {
 }
 
 		.auxiliaryMenu > li > a {
-				color: #242424;
+				color: #;
 			}
 
 	.auxiliaryMenu > li > a:hover, .auxiliaryMenu > li > a:focus {
-				color: #4c4c4c;
+				color: #;
 			}
 	
 .order__delivery_threshold_difference, .order__delivery_threshold_difference-met {
@@ -313,12 +313,20 @@ a:hover {
 /*Custom Styles*/
 /*TEMP CSS TO USE WHILE WORKING */
 
+
 /* END TEMP CSS */
 
 
 /* Eliminate horiz scroll bar */
 body {
     overflow-x: hidden;
+}
+
+
+
+/* Order Status Bar color (below header) */
+.orderStatus {
+    background-color: #000000;
 }
 /* How It Works Section */
 .howItWorksWidget__step>p {
@@ -328,7 +336,7 @@ body {
 /* Sets header as a flex container
    with items centered vertically 
    and horizontally */
-.siteHeader__container {
+.siteHeader__flexContainer--style4 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -338,7 +346,7 @@ body {
    one layer below logo and spaces items out*/
 .mainNavigation {
     position: absolute;
-    top: 78px;
+    top: 115px;
     width: 100%;
     z-index: 1;
     display: flex;
@@ -402,15 +410,14 @@ body {
 
 /* Hides "Sign in" and "create account"
    links from menu bar,
-   but keeps other LI visible */
+   but keeps other LI visible 
 li:not(.dropdown, 
        .menu-item,
        .orderStatus__container,
        .photoGridWidget__listItem,
        .accreditation) {
     visibility: hidden;
-    margin-right: -50px;
-}
+}*/
 
 /* Keeps the following items visible and 
    aligned properly:
@@ -502,4 +509,8 @@ li>.btn,
 
 .announcement_bar a:hover {
     color: #b99b7c
+}
+
+.auxiliaryMenu--block {
+    visibility: hidden;
 }
