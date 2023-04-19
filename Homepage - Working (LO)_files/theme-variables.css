@@ -1,0 +1,366 @@
+:root {
+	--display-font-family: Lora;
+	--body-font-family: Arial;
+
+	--font-size: 15px
+
+	--logo-padding: 14px;
+	--logo-height: 186px;
+
+	--header-width: 1366px;
+	--header-border-position: top;
+	--header-border-size: 0;
+	--header-bg-color: transparent;
+	--header-border-color: 226 114 56;
+
+	--brand-color: 56 53 53;
+	--brand-color-inverted: 255 255 255;
+
+	--background-color: 255 15 ;
+	--text-color: 61 61 61;
+	--link-color: 56 53 53;
+
+	--action-color: 0 0 0;
+	--action-color-inverted: 255 255 255;
+
+	--announcement-bar-bg-color: 56 53 53;
+	--announcement-bar-text-color: 255 255 255;
+	--announcement-bar-link-color: 255 255 255;
+
+	--main-navigation-bg-color: transparent;
+	--main-navigation-link-color: 56 53 53;
+	--main-navigation-link-color-hover: 255 255 255;
+	--main-navigation-link-bg-color: transparent;
+	--main-navigation-link-font-size: 16px;
+	--main-navigation-link-alignment: center;
+
+	--auxiliary-bg-color: transparent;
+	--auxiliary-border-color: transparent;
+	--auxiliary-link-color: inherit;
+
+	--order-status-bg-color: 56 53 53;
+	--order-status-color: 255 255 255;
+
+	--store-menu-bg_color: 248 248 248;
+	--store-menu-color: 119 7 ;
+
+	--footer-bg-color: 0 0 0;
+	--footer-color: 255 255 255;
+	--footer-link-color: 172 171 171;
+}
+
+/*Custom Styles*/
+/*TEMP CSS TO USE WHILE WORKING */
+
+
+/* END TEMP CSS */
+
+.testimonialsWidget__testimonials {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1750px;
+}
+
+.homepage_header {
+    position: relative;
+    width: 100%;
+}
+
+.header_video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.header_video video {
+    width: 100%;
+    height: auto;
+}
+
+.text_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#mission {
+    font-family: Lora;
+    font-size: 5em;
+    font-weight: 600;
+}
+
+#statement {
+    font-family: Lora;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 110%;
+    text-align: center;
+}
+
+/* Eliminate horiz scroll bar */
+body {
+    overflow-x: hidden;
+}
+
+
+/* Order Status Bar color (below logo) */
+.orderStatus {
+    background-color: #000000;
+}
+
+.newsletterWidget__header h2 {
+    font-size: 42px!important;
+}
+
+/* How It Works Section */
+.howItWorksWidget__header {
+    margin-bottom: 0!important;
+}
+
+.howItWorksWidget__step>p {
+    font-size: 1.35em;
+}
+
+.howItWorksWidget__stepsContainer {
+    max-width: 1200px;
+}
+
+.howItWorksWidget__cta {
+    margin-top: 0;
+}
+
+.howItWorksWidget--166 {
+    padding-bottom: 0!important;
+}
+
+/* Sets header as a flex container
+   with items centered vertically 
+   and horizontally */
+.siteHeader__flexContainer--style4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Moves menu bar to vertical center of header,
+   one layer below logo and spaces items out*/
+.mainNavigation {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainNavigation__list {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 15px;
+}
+
+.mainNavigation__list>li {
+    width: 150px;
+}
+.mainNavigation__list > li > a {
+    font-size: 1.2em;
+    font-family: 'Lora';
+}
+
+.mainNavigation__list li:nth-child(n+6) {
+    display: none;
+}
+
+.mainNavigation__list #dropdown {
+    display: inline-block;
+}
+
+/* Sets logo one layer above menu bar */
+.logo__container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Adjusts header for less white space
+above logo */
+.siteHeader__container {
+    position: relative;
+    top: -35px;
+    margin-bottom: -30px;
+}
+
+.auxiliaryMenu {
+    z-index: 1;
+}
+
+/* Keeps the following items visible and 
+   aligned properly:
+    - dropdown items in "Account" menu
+    - links in admin toolbar
+    - "Checkout" button
+    - Nav links for mobile users */
+.mobileNav__list,
+.mobileNav__list li,
+.dropdown-menu li,
+.adminToolbar__list li,
+li>.btn,
+.mobileNav>li,
+#mobileNav_menuItem--account {
+    visibility: visible;
+    margin-right: 0;
+}
+
+/* Adjusts sizing and layout
+    of standing order section */
+.featuredProductsWidget__products {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+}
+
+/* Hides price of standing order options
+    (because it says $0.00)  */
+.featuredProductsWidget__price--style2 {
+    display: none;
+}
+
+/* Adds a small shadow around text over pics
+    to make it pop */
+.bannerWidget__heading,
+.bannerWidget__subheading, 
+#mission,
+#statement {
+    text-shadow: 0px 0px 10px black;
+}
+
+/*  The following is for the 
+    "Message" section  */
+
+.msg_container {
+    width: 80%;
+    max-width: 1346px;
+    margin: auto;
+}
+
+.msg_content {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1153px;
+}
+
+#leftPanel {
+    padding: 0 80px 0 0px;
+    flex-basis: 65%;
+}
+
+#rightPanel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+    flex-basis: fit-content;
+}
+
+.msg_img {
+    width: 400px;
+}
+
+.panelHeading {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Lora";
+    margin: auto;
+    text-align: center;
+}
+
+.panelSubHeading {
+    font-size: 1.5em;
+    font-weight: 100;
+    font-family: "Arial";
+}
+
+/* End Message Section*/
+
+.announcement_bar {
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.announcement_bar a {
+    text-decoration: underline;
+}
+
+.announcement_bar a:hover {
+    color: #b99b7c
+}
+
+/* +++MEDIA QUERIES+++ */
+
+@media (max-width: 1000px) {
+        .testimonialsWidget__testimonials {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainNavigation,
+    .orderStatus__container {
+        display: none!important;
+    }
+    .msg_content {
+        flex-direction: column;
+    }
+    .siteHeader__container {
+        top: 0;
+        margin-bottom: 0;
+    }
+
+    #menuItem_28 {
+        margin-right: 0;
+    }
+    #menuItem_120 {
+        margin-left: 0;
+    }
+    #menuItem_130 {
+        display: none;
+    }
+    #mobileNav_menuItem--login,
+    #mobileNav_menuItem--logout{
+        display: none;
+    }
+    .caret {
+        display: inline-block;
+    }
+    
+    #mission {
+        font-size: 3em;
+    }
+    
+    #statement {
+        font-size: 2em;
+    }
+    #leftPanel {
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    #mission,
+    #statement {
+        font-size: 1em;
+    }
+}
